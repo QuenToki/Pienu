@@ -1,3 +1,35 @@
-<ion-app>
+<!-- <ion-app>
   <ion-router-outlet></ion-router-outlet>
+</ion-app> -->
+
+
+<ion-app class="ion-side-menu">
+  <ion-menu side="start" menuId="first" contentId="content">
+    <ion-header>
+      <div class="user-section">
+        <img src="/assets/images/menu-background.jpg" alt="" class="menu-background-img">
+        <div class="user-preview-information">
+          <img src="/assets/images/gto-pp.jpg" class="user-profile-img" alt="">
+          <h4>Robin Hood</h4>
+          <p>@quentoki</p>
+        </div>
+      </div>
+    </ion-header>
+
+    <ion-content class="menu-content">
+        <ion-menu-toggle>
+          <ul>
+            <li><ion-icon name="home-outline"></ion-icon>Home</li>
+            <li><ion-icon name="people-outline"></ion-icon>Réunions</li>
+            <li><ion-icon name="calendar-outline"></ion-icon>Évènements</li>
+            <li><ion-icon name="file-tray-full-outline"></ion-icon>Contact</li>
+          </ul>
+          
+          <p>A propos</p>
+          
+          <p>Se déconnecter</p>
+        </ion-menu-toggle>
+      </ion-content>
+  </ion-menu>
+  <ion-router-outlet Id="content"></ion-router-outlet>
 </ion-app>
