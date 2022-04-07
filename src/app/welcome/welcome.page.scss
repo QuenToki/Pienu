@@ -1,0 +1,51 @@
+.toolbar-custom {
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: whitesmoke;
+}
+
+
+.welcome-content {
+    position: relative;
+
+    .welcome-background-img {
+        position: absolute;
+        z-index: -10;
+        filter: brightness(60%);
+        height: 80%;
+        object-fit: cover;
+    }
+
+    .welcome-message {
+        background-color: #32635C;
+        color: whitesmoke;
+        position: absolute;
+        padding: 20px 20px 30px;
+        bottom: 50px;
+        left: 20px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 50px;
+    }
+    
+    .welcome-start-button {
+        background-color: #F38D78;
+        color: whitesmoke;
+        position: absolute;
+        padding: 0 20px;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+        bottom: 30px;
+        right: 0;
+    }
+}
+
+ion-toolbar {
+    --background: transparent;
+    --ion-color-base: transparent !important;
+}
+
+ion-menu-button {
+    --color: --ion-color-primary-contrast;
+}
