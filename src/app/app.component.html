@@ -1,8 +1,3 @@
-<!-- <ion-app>
-  <ion-router-outlet></ion-router-outlet>
-</ion-app> -->
-
-
 <ion-app class="ion-side-menu">
   <ion-menu side="start" menuId="first" contentId="content">
     <ion-header>
@@ -19,9 +14,10 @@
     <ion-content class="menu-content">
         <ion-menu-toggle>
           <ul>
-            <li><ion-icon name="home-outline"></ion-icon>Home</li>
+            <li [routerLink]="['/welcome']"><ion-icon name="home-outline"></ion-icon>Accueil</li>
             <li><ion-icon name="people-outline"></ion-icon>Réunions</li>
             <li><ion-icon name="calendar-outline"></ion-icon>Évènements</li>
+            <li [routerLink]="['/notification']"><ion-icon name="notifications-outline"></ion-icon>Notifications</li>
             <li><ion-icon name="file-tray-full-outline"></ion-icon>Contact</li>
           </ul>
           
