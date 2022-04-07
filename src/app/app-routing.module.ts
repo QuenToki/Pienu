@@ -38,6 +38,10 @@ const routes: Routes = [
     loadChildren: () => import('./todolist/todolist.module').then( m => m.TodolistPageModule)
 
   },
+  {
+    path: 'notification',
+    loadChildren: () => import('./notification/notification.module').then( m => m.NotificationPageModule)
+  },
 ];
 
 @NgModule({
