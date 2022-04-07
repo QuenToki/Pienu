@@ -3,22 +3,27 @@
 
 /** Ionic CSS Variables **/
 :root {
+  /** TEXT SIZE **/
+  --ion-text-size: 16px;
+  --ion-title-size: 20px;
+  --ion-secondary-size: 14px;
+
+  /** FONT FAMILY **/
+  --ion-font-family: -apple-system, BlinkMacSystemFont, 'Roboto';
+
   /** primary **/
   --ion-color-primary: #33635C;
-  --ion-color-primary-rgb: 56, 128, 255;
   --ion-color-primary-contrast: #ffffff;
   --ion-color-primary-contrast-rgb: 255, 255, 255;
   
 
   /** secondary **/
   --ion-color-secondary: #ffffff;
-  --ion-color-secondary-rgb: 61, 194, 255;
   --ion-color-secondary-contrast: #ffffff;
   --ion-color-secondary-contrast-rgb: 255, 255, 255;
 
   /** tertiary **/
   --ion-color-tertiary: #F28D78;
-  --ion-color-tertiary-rgb: 82, 96, 255;
   --ion-color-tertiary-contrast: #ffffff;
   --ion-color-tertiary-contrast-rgb: 255, 255, 255;
   
