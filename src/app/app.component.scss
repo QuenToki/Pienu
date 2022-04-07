@@ -61,4 +61,12 @@ ion-menu-toggle {
             }
         }
     }
+    
+    ul li:active,
+    ul li:hover,
+    p:active,
+    p:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+    } 
 }
