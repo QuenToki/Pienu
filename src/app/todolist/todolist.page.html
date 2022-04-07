@@ -1,8 +1,24 @@
-
 <ion-content>
 <div class="slide">
   <div class="slide-todolist">
     <img src="assets/Image/slide2.png">
   </div>
+</div>
+
+<div class="titletodo">
+  <div class="titleh1">
+  <h1>To do list</h1>
+  </div>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error at distinctio.
+  </p>
+  <div class="Nbutton">
+  <ion-button routerLink="/task" color="danger">VOIR</ion-button>
+  </div>
+</div>
+
+<div class="back">
+<ion-button routerLink="/home" color="danger" shape="circle" (click)="buttonClicked()">
+  <ion-icon name='arrow-back-circle-sharp'></ion-icon>
+</ion-button>
 </div>
 </ion-content>
