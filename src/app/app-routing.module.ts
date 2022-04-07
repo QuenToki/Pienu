@@ -8,17 +8,13 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'todolist',
+    redirectTo: 'task',
     pathMatch: 'full'
   },
   {
     path: 'login',
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   },
-<<<<<<< HEAD
-  
-=======
->>>>>>> b97715705f7ea77103676577f4fba9d24f066d90
   {
     path: 'forgot-password',
     loadChildren: () => import('./forgot-password/forgot-password.module').then( m => m.ForgotPasswordPageModule)
@@ -27,6 +23,11 @@ const routes: Routes = [
     path: 'todolist',
     loadChildren: () => import('./todolist/todolist.module').then( m => m.TodolistPageModule)
   },
+  {
+    path: 'task',
+    loadChildren: () => import('./task/task.module').then( m => m.TaskPageModule)
+  },
+
 
 ];
 
