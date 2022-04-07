@@ -6,10 +6,40 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./task.page.scss'],
 })
 export class TaskPage implements OnInit {
-
-  constructor() { }
-
+/*
+  data= [
+    {
+      name: 'Arroser les tomates',
+      selected: false
+    },
+    {
+      name: 'Planter les choux',
+      selected: true
+    },
+    {
+      name: 'Semer les courgettes',
+      selected: false
+    },
+    {
+      name: 'Mettre du compost',
+      selected: true
+    },
+  ]
+*/
+/*  
+constructor() { }
+  
   ngOnInit() {
   }
+
+  onClick( check ){
+    console.log(check);
+  }
+}
+*/
+constructor() { }
+
+ngOnInit() {
+}
 
 }
