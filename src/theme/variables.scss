@@ -1,6 +1,8 @@
 // Ionic Variables and Theming. For more info, please see:
 // http://ionicframework.com/docs/theming/
 
+@import 'pienu-variables.scss';
+
 /** Ionic CSS Variables **/
 :root {
   /** TEXT SIZE **/
@@ -79,7 +81,10 @@ ion-content{
   --background: #FBF9F0;
 }
 ion-toolbar{
-  --background: #FBF9F0;
+  // --background: #FBF9F0;
+}
+ion-title {
+  --background: var(--ion-primary-color);
 }
 @media (prefers-color-scheme: dark) {
   /*

@@ -1,10 +1,15 @@
-<ion-header>
-  <br><br><br><br><br><ion-title>
-    {{ currentMonth }}
-  </ion-title>
+<ion-header class="calendrier-header">
+  <ion-toolbar>
+    <div class="calendrier-toolbar-custom">
+      <ion-menu-button type="button"></ion-menu-button>
+    </div>
+  </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <p class="current-month">  
+    {{ currentMonth }}
+  </p>
   <calendar id="myCalendar"
   locale="fr-FR"
   calendarMode="month" 
