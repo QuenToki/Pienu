@@ -22,22 +22,22 @@ ion-toolbar {
 }
 
 ion-content .notifications .notification {
-    background: #F38D78;
-    color: whitesmoke;
+    background: var(--ion-color-tertiary);
+    color: var(--light);
     padding: 20px;
     border-bottom: 1px solid lightgrey;
     display: flex;
     align-items: center;
 
     &.checked {
-        background: #33635C;
+        background: var(--ion-color-primary);
     }
 
     .notification-image {
         width: 30px;
         height: 30px;
         border-radius: 50%;
-        border: 1px solid whitesmoke;
+        border: 1px solid var(--light);
         margin-right: 20px;
     }
     .notification-detail {
