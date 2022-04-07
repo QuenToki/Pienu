@@ -20,6 +20,19 @@ const routes: Routes = [
     loadChildren: () => import('./forgot-password/forgot-password.module').then( m => m.ForgotPasswordPageModule)
   },
   {
+
+    path: 'planning',
+    loadChildren: () => import('./planning/planning.module').then( m => m.PlanningPageModule)
+  },
+  {
+    path: 'calendrier',
+    loadChildren: () => import('./calendrier/calendrier.module').then( m => m.CalendrierPageModule)
+  },
+  {
+    path: 'welcome',
+    loadChildren: () => import('./welcome/welcome.module').then( m => m.WelcomePageModule)
+  },
+  {
     path: 'todolist',
     loadChildren: () => import('./todolist/todolist.module').then( m => m.TodolistPageModule)
   },
@@ -27,8 +40,10 @@ const routes: Routes = [
     path: 'task',
     loadChildren: () => import('./task/task.module').then( m => m.TaskPageModule)
   },
-
-
+  {
+    path: 'notification',
+    loadChildren: () => import('./notification/notification.module').then( m => m.NotificationPageModule)
+  },
 ];
 
 @NgModule({

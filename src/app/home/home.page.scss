@@ -25,3 +25,13 @@
 #container a {
   text-decoration: none;
 }
+
+// -----
+
+ion-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+ion-button p {
+  font-size: 12px;
+}

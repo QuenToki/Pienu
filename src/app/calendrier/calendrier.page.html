@@ -1,0 +1,18 @@
+<ion-header>
+  <br><br><br><br><br><ion-title>
+    {{ currentMonth }}
+  </ion-title>
+</ion-header>
+
+<ion-content>
+  <calendar id="myCalendar"
+  locale="fr-FR"
+  calendarMode="month" 
+  startHour="6"
+  endHour="20"
+  step="30"
+  startingDayWeek="1"
+  [currentDate]="currentDate"
+  (onTitleChanged)="onViewTitleChanged($event)">
+</calendar>
+</ion-content>
