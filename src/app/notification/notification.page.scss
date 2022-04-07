@@ -22,7 +22,7 @@ ion-toolbar {
 }
 
 ion-content .notifications .notification {
-    background: var(--ion-color-tertiary);
+    background: var(--ion-secondary-color);
     color: var(--light);
     padding: 20px;
     border-bottom: 1px solid lightgrey;
@@ -30,7 +30,7 @@ ion-content .notifications .notification {
     align-items: center;
 
     &.checked {
-        background: var(--ion-color-primary);
+        background: var(--ion-primary-color);
     }
 
     .notification-image {
