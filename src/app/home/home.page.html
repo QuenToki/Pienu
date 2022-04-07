@@ -1,13 +1,49 @@
 <ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons>
+      <ion-button>
+        <ion-menu-button color="dark"></ion-menu-button>
+      </ion-button>
+      <ion-button>
+        <p>SKIP</p>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+
+  <!-- <ion-toolbar>
+    <ion-buttons slot="secondary">
+      <ion-button>
+        <ion-icon slot="icon-only" name="person-circle"></ion-icon>
+      </ion-button>
+      <ion-button>
+        <ion-icon slot="icon-only" name="search"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="primary">
+      <ion-button color="secondary">
+        <ion-icon slot="icon-only" ios="ellipsis-horizontal" md="ellipsis-vertical"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Default Buttons</ion-title>
+  </ion-toolbar> -->
+
 
 </ion-header>
+
+
 <ion-content class="auth-form" >
   <ion-grid>
     <ion-row>
-        <ion-col align-self-center><br><br><br><br><br><br><br><br><br><br><br><br>
+
+      <ion-col align-self-center><br><br><br><br><br><br><br><br><br><br><br><br>
+
         <ion-button [routerLink]="['/login']" expand="block" color="danger">Sign In</ion-button>
+
         <ion-button [routerLink]="['/planning']" expand="block" color="danger">planning</ion-button>
 
+
+        <ion-button [routerLink]="['/welcome']" expand="block" color="danger">Welcome page</ion-button>
       </ion-col>
     </ion-row>
   </ion-grid>

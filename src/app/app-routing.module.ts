@@ -8,7 +8,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'todolist',
     pathMatch: 'full'
   },
   {
@@ -16,18 +16,27 @@ const routes: Routes = [
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   },
 
-  
   {
     path: 'forgot-password',
     loadChildren: () => import('./forgot-password/forgot-password.module').then( m => m.ForgotPasswordPageModule)
   },
   {
+
     path: 'planning',
     loadChildren: () => import('./planning/planning.module').then( m => m.PlanningPageModule)
   },
   {
     path: 'calendrier',
     loadChildren: () => import('./calendrier/calendrier.module').then( m => m.CalendrierPageModule)
+  },
+  {
+    path: 'welcome',
+    loadChildren: () => import('./welcome/welcome.module').then( m => m.WelcomePageModule)
+  },
+  {
+    path: 'todolist',
+    loadChildren: () => import('./todolist/todolist.module').then( m => m.TodolistPageModule)
+
   },
 ];
 
