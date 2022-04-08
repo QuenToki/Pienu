@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+ion-button {
+    --background: var(--ion-secondary-color);
+}
+
 .block-image {
     height: 300px;
     width: 100%;

@@ -11,14 +11,14 @@
 <div class="block-infos">
     <h1>Cahier de suivi</h1>
     <p> Suivre en temps réel votre potager</p>
-    <ion-button color="danger" [routerLink]="['/calendrier']">Voir</ion-button>
+    <ion-button [routerLink]="['/calendrier']">Voir</ion-button>
     
 </div>
 <div class="button">
-    <ion-button routerLink="/welcome" color="danger" shape="circle" (click)="buttonClicked()">
+    <ion-button routerLink="/welcome" shape="circle" (click)="buttonClicked()">
         <ion-icon name='arrow-back-circle-sharp'></ion-icon>
       </ion-button>
-    <ion-button routerLink="/todolist" color="danger" shape="circle" (click)="buttonClicked()">
+    <ion-button routerLink="/todolist" shape="circle" (click)="buttonClicked()">
       <ion-icon name='arrow-forward-circle-sharp'></ion-icon>
     </ion-button>
 
