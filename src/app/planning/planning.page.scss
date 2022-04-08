@@ -7,7 +7,15 @@
 }
 
 .block-image {
-    height: 65%;
+    height: 300px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
 }
 
 .block-infos {
@@ -17,13 +25,15 @@
     justify-content: center;
     align-items: center;
     grid-row-gap: var(--ion-margin);
+    text-align: center;
+}
+.button {
+    text-align: center;
 }
 
-ion-button {
-    --background: var(--ion-secondary-color);
-    --background-hover: var(--ion-secondary-color);
-    --background-focused: var(--ion-secondary-color);
-    --width: 50%;
-    margin: calc(2*var(--ion-margin)) auto 0;
-    --border-radius: 30px;
+ion-button[shape=circle] {
+    text-align: center;
+    --border-radius: 70%;
+    width: 56px;
+    height: 56px;
 }

@@ -19,12 +19,12 @@ export class LoginPage implements OnInit {
     message:""
   };
   constructor(private router: Router,) { 
-    var token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjQ5MzQwNjA5LCJleHAiOjE2NDk0MjcwMDl9.tunJpyyAS6VubhB9YT78j0kZx_QbFFU_dYOpvJSuOgA';
 
   }
   
+
   login() {
-    fetch('https://pienu.herokuapp.com/api/auth/signin',{
+    fetch('https://mockapi.io/projects/624d6073c172b69d6932019d/users',{
       method: 'POST',
       body: JSON.stringify(this.loginData),
       headers: {
@@ -38,9 +38,10 @@ export class LoginPage implements OnInit {
       console.log(data);
       console.log(data.accessToken);
       console.log(data.message);
-      if(data.accessToken !== undefined){
-        console.log("token : "+data.accessToken);
-        localStorage.setItem('token', data.accessToken);
+      if(data.mail !== undefined && data.password !== undefined){
+        //console.log("token : "+data.accessToken);
+        //localStorage.setItem('token', data.accessToken);
+        localStorage.setItem('mail', this.loginData.mail);
         this.router.navigateByUrl('/welcome');
       }else{
         this.erreur.message = data.message;
