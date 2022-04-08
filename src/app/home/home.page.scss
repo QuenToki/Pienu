@@ -1,3 +1,9 @@
+@import "../../theme/pienu-variables.scss";
+
+ion-button {
+  --background: var(--ion-secondary-color);
+}
+
 #container {
   text-align: center;
 
