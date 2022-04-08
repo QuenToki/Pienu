@@ -1,5 +1,7 @@
 <ion-header>
-
+    <ion-toolbar class="toolbar-custom">
+        <ion-menu-button slot="start" type="button"></ion-menu-button>
+      </ion-toolbar>
 </ion-header>
 
 <ion-content>
@@ -9,8 +11,18 @@
 <div class="block-infos">
     <h1>Cahier de suivi</h1>
     <p> Suivre en temps réel votre potager</p>
-    <ion-button [routerLink]="['/calendrier']">Voir</ion-button>
+    <ion-button color="danger" [routerLink]="['/calendrier']">Voir</ion-button>
+    
 </div>
+<div class="button">
+    <ion-button routerLink="/welcome" color="danger" shape="circle" (click)="buttonClicked()">
+        <ion-icon name='arrow-back-circle-sharp'></ion-icon>
+      </ion-button>
+    <ion-button routerLink="/todolist" color="danger" shape="circle" (click)="buttonClicked()">
+      <ion-icon name='arrow-forward-circle-sharp'></ion-icon>
+    </ion-button>
+
+  </div>
 
 
 </ion-content>

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ModalController } from '@ionic/angular';
 import { SplashComponent } from './splash/splash.component';
+import { Router } from '@angular/router';
 
 import { Platform } from '@ionic/angular';  
 
@@ -11,15 +12,29 @@ import { Platform } from '@ionic/angular';
 })
 export class AppComponent {
   navigate: any;  
-
+  user = {
+    mail: '',
+    
+  };
   constructor(   
     private modalController : ModalController,
-    private platform: Platform,  
+    private platform: Platform,
+    private router: Router  
   ) {   
     this.presentModal();  
     this.initializeApp();  
+    this.user.mail = localStorage.getItem('mail');
   }
 
+   
+  deconexion() {
+    
+     
+        localStorage.clear();
+        this.router.navigateByUrl('/login');
+
+    
+  }
   initializeApp() {  
     this.platform.ready().then(() => {  
     });  
