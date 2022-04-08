@@ -14,7 +14,6 @@ ion-button {
     height: 300px;
     width: 100%;
     padding: 10px;
-    margin-bottom: 20px;
     img {
         height: 100%;
         width: 100%;
@@ -26,16 +25,26 @@ ion-button {
     height: 35%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     grid-row-gap: var(--ion-margin);
     text-align: center;
 }
-.button {
+
+ion-button[shape=circle]:first-of-type {
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
     text-align: center;
+    --border-radius: 70%;
+    width: 56px;
+    height: 56px;
 }
 
-ion-button[shape=circle] {
+ion-button[shape=circle]:last-of-type {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
     text-align: center;
     --border-radius: 70%;
     width: 56px;
