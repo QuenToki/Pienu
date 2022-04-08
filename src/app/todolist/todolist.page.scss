@@ -8,12 +8,16 @@
     height: 300px;
     width: 100%;
     padding: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 0;
     img {
         height: 100%;
         width: 100%;
         object-fit: cover;
     }
+}
+
+h1 {
+    margin-top: 0;
 }
 
 .Nbutton{
@@ -25,6 +29,9 @@ ion-button[shape=circle] {
     --border-radius: 70%;
     width: 56px;
     height: 56px;
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
 }
 
 ion-button {
