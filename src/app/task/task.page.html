@@ -1,26 +1,57 @@
 <ion-content>
   <div class="background">
-    <div class="bg-1">
       <img src="assets/Image/bg.png">
     </div>
-  </div>
+
 <div class="title">
   <div class="botht">
   <h1>To do list</h1>
     <h2>Avril</h2>
   </div>
 </div>
+
+<div class="test">
+<ion-list>
+  <ion-item>
+    <ion-label>Planter des choux</ion-label>
+    <ion-checkbox color="primary"></ion-checkbox>
+  </ion-item>
+  <ion-item>
+    <ion-label>Arroser les courgettes</ion-label>
+    <ion-checkbox checked="true"></ion-checkbox>
+  </ion-item>
+  <ion-item>
+    <ion-label>Semer les fraises</ion-label>
+    <ion-checkbox checked="false"></ion-checkbox>
+  </ion-item>
+  <ion-item>
+    <ion-label>Mettre du compost</ion-label>
+    <ion-checkbox checked="true"></ion-checkbox>
+  </ion-item>
+</ion-list>
+</div>
+
 <div class="background-mid">
   <div class="mid">
     <img src="assets/Image/bg2.png">
   </div>
 </div>
+
 <div class="background-down">
   <div class="down">
     <img src="assets/Image/bg3.png">
   </div>
 </div>
 
+  <div class="dbox">
+    <img src="assets/Image/double-box.png">
+  </div>
+
+  <ion-item>
+    <ion-label>Semer les fraises</ion-label>
+    <ion-checkbox checked="false"></ion-checkbox>
+  </ion-item>
+  
 <div class="back">
   <ion-button routerLink="/home" color="danger" shape="circle" (click)="buttonClicked()">
     <ion-icon name='arrow-back-circle-sharp'></ion-icon>

@@ -1,7 +1,10 @@
+.title .botht h2{
+    margin-top: 0px;
+}
 .title{
     position: relative;
     margin-left: 3em;
-    margin-top: -120px;
+    margin-top: -125px;
     z-index: 1;
 
 }
@@ -16,8 +19,24 @@
     margin-top: -10em;
 }
 
+.back{
+    position: absolute;
+    left: 25px;
+    bottom: 25px;
+
+    
+}
+
 ion-button[shape=circle] {
     --border-radius: 70%;
     width: 56px;
     height: 56px;
+}
+
+.dbox{
+    position: absolute;
+    z-index: 2;
+    top: 24.2em;
+    width: 17em;
+    left: 50px;
 }
