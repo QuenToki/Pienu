@@ -11,8 +11,6 @@ const routes: Routes = [
 
     redirectTo: 'login',
 
-    redirectTo: 'welcome',
-
     pathMatch: 'full'
   },
   {
