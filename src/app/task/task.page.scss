@@ -1,42 +1,23 @@
-.title .botht h2{
-    margin-top: 0px;
-}
-.title{
-    position: relative;
-    margin-left: 3em;
-    margin-top: -125px;
-    z-index: 1;
+@import "../../theme/pienu-variables.scss";
 
-}
-.background-mid{
-    position: relative;
-    z-index: -1;
-    margin-top: -9em;
-}
-.background-down{
-    position: relative;
-    z-index: -2;
-    margin-top: -10em;
-}
+.title {
+ display: flex;
+ flex-direction: column;
+ padding-top: 20px;
+ align-items: center;
+ color: var(--light);
+ background-color: var(--ion-primary-color) ;
 
-.back{
-    position: absolute;
-    left: 25px;
-    bottom: 25px;
-
-    
 }
 
 ion-button[shape=circle] {
     --border-radius: 70%;
     width: 56px;
     height: 56px;
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    --background: var(--ion-secondary-color) ;
 }
 
-.dbox{
-    position: absolute;
-    z-index: 2;
-    top: 24.2em;
-    width: 17em;
-    left: 50px;
-}
+
