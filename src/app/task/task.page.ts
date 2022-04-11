@@ -6,38 +6,28 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./task.page.scss'],
 })
 export class TaskPage implements OnInit {
-/*
-  data= [
-    {
-      name: 'Arroser les tomates',
-      selected: false
-    },
-    {
-      name: 'Planter les choux',
-      selected: true
-    },
-    {
-      name: 'Semer les courgettes',
-      selected: false
-    },
-    {
-      name: 'Mettre du compost',
-      selected: true
-    },
-  ]
-*/
-/*  
-constructor() { }
-  
-  ngOnInit() {
+  monthlyTask = {
+    descritpion: '',
+    
+  };
+constructor() {
+  fetch('http://localhost:8080/api/monthly',{
+  method: 'GET',
+  headers: {
+    "Content-Type": "application/json",
+    "x-access-token":  localStorage.getItem('token')
   }
-
-  onClick( check ){
-    console.log(check);
+}).then(response => {
+  return response.json();
+}).then(data => {
+  console.log(data);
+  console.log(data.length);
+  for(let i=0; i<data.length; i++){
+    console.log(data[i].titre);
+    this.monthlyTask.descritpion = data[i].titre;
   }
-}
-*/
-constructor() { }
+});
+ }
 
 ngOnInit() {
 }

@@ -24,28 +24,32 @@ export class LoginPage implements OnInit {
   
 
   login() {
-    fetch('https://mockapi.io/projects/624d6073c172b69d6932019d/users',{
+    fetch('http://localhost:8080/api/auth/signin',{
       method: 'POST',
       body: JSON.stringify(this.loginData),
       headers: {
         "Content-Type": "application/json",
       }
-    }).
-    then(response => {
+  })
+    .then(response => {
         return response.json();
     })
     .then(data => {
       console.log(data);
-      console.log(data.accessToken);
-      console.log(data.message);
-      if(data.mail !== undefined && data.password !== undefined){
-        //console.log("token : "+data.accessToken);
-        //localStorage.setItem('token', data.accessToken);
-        localStorage.setItem('mail', this.loginData.mail);
+      //console.log(data.accessToken);
+      //console.log(data.message);
+      if(data.accessToken !== undefined ){
+        console.log("token : "+data.accessToken);
+        localStorage.setItem('token', data.accessToken);
+               
+        console.log('ok');
+        localStorage.setItem('token', data.accessToken);
+        localStorage.setItem('mail', data.mail);
         this.router.navigateByUrl('/welcome');
+        
       }else{
-        this.erreur.message = data.message;
-
+        //this.erreur.message = data.message;
+        console.log('erreur');
       }
 
     });
